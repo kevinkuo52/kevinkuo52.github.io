@@ -33,32 +33,27 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* First image (Logo. Full height) */
 .bgimg-1 {
-/*    background-attachment: fixed;*/
+    background-attachment: fixed;
     background-position: 50% 45%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('unicorn.png');
     min-height: 100%;
 }
-
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("Lost.png");
     min-height: 400px;
 }
-
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("cherry blossom sunset.png");
     min-height: 400px;
 }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media all and (max-width: 499px) {
    .bgimg-1 {
@@ -75,8 +70,6 @@ body, html {
         background-attachment: scroll;
     }
 }
-
-
 a:hover {
     color: black;
     text-decoration: underline;
@@ -84,12 +77,10 @@ a:hover {
 a:link {
     text-decoration: none;
 }
-
 .w3-top {
     color: white;
 }   
 </style>
-
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -183,9 +174,6 @@ a:link {
  
 
 <script>
-
-
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -196,7 +184,6 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -206,8 +193,8 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 </script>
+
 <!-- below source are from https://codepen.io/MarcoGuglielmelli/pen/lLCxy -->
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
