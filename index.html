@@ -60,23 +60,23 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-
+@media all and (max-width: 499px) {
+   .bgimg-1 {
+        background-attachment: fixed;
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('butterfly.png');
+        min-height: 100%;
+    }
+}
 @media only screen and (max-device-width: 1048px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
 
-@media all and (max-width: 499px) {
-   .bgimg-1 {
-    background-attachment: fixed;
-    background-position: 50% 45%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('butterfly.png');
-    min-height: 100%;
-}
-}
+
 a:hover {
     color: black;
     text-decoration: underline;
