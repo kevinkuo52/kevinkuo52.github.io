@@ -74,7 +74,7 @@
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
-        //window.addEventListener('touchmove', touchEvent);
+        window.addEventListener('touchstart', touchEvent);
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
@@ -97,7 +97,7 @@
         if(document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
     }
-    /*
+    
     function touchEvent(e){
          var posx = posy = 0;
         if (e.pageX || e.pageY) {
@@ -111,7 +111,7 @@
         target.x = posx;
         target.y = posy;
     }
-    */
+    
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
