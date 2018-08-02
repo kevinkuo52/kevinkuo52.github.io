@@ -73,7 +73,7 @@
     function addListeners() {
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
-            window.addEventListener('touch', touch);
+            window.addEventListener('touch', touchEvent);
         }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
@@ -97,7 +97,7 @@
         if(document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
     }
-    function touch(e){
+    function touchEvent(e){
          var posx = posy = 0;
         if (e.pageX || e.pageY) {
             posx = e.pageX;
