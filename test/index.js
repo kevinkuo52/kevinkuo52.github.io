@@ -1,4 +1,3 @@
-//this source are from https://codepen.io/MarcoGuglielmelli/pen/lLCxy
 (function() {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -13,7 +12,7 @@
         height = window.innerHeight;
         target = {x: width/2, y: height/2};
 
-        largeHeader = document.getElementById('home');
+        largeHeader = document.getElementById('large-header');
         largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas');
