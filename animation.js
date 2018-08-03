@@ -74,7 +74,7 @@
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
-        window.addEventListener('touchstart', touchEvent);
+        //window.addEventListener('touchstart', touchEvent);
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
