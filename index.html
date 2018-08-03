@@ -54,7 +54,7 @@ body, html {
 }
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-/* Turn off parallax scrolling for tablets and phones 
+/* Turn off parallax scrolling for tablets and phones*/
 @media all and (max-width: 499px) {
    .bgimg-1 {
         background-attachment: fixed;
@@ -62,10 +62,11 @@ body, html {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('butterfly.png');
-        width: 100%;
+        min-height: 100%;
+        width: inherit;
     }
 }
-*/
+
 @media only screen and (max-device-width: 1048px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
