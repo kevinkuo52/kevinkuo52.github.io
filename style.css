@@ -1,0 +1,62 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+/* Create a Parallax Effect */
+ .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('unicorn.png');
+    min-height: inherit;
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("Lost.png");
+    min-height: 400px;
+}
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("cherry blossom sunset.png");
+    min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+/* Turn off parallax scrolling for tablets and phones*/
+@media all and (max-width: 499px) {
+   .bgimg-1 {
+        background-attachment: fixed;
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('clean2.png');
+        min-height: inherit;
+        width: inherit;
+    }
+}
+
+@media only screen and (max-device-width: 1048px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:link {
+    text-decoration: none;
+}
+.w3-top {
+    color: white;
+}
